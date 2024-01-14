@@ -1,0 +1,122 @@
+:root {
+  --grey-color: hsl(216, 12%, 22%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  color: hsl(217, 12%, 63%);
+  font-family: "Overpass", sans-serif;
+}
+
+.wrapper {
+  background-color: hsl(213, 19%, 18%);
+  width: 360px;
+  border-radius: 1rem;
+}
+.survey {
+  padding: 25px;
+  overflow: hidden;
+}
+.icon {
+  background-color: var(--grey-color);
+  border-radius: 50%;
+  padding: 10px;
+}
+h1 {
+  color: white;
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.text {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+li {
+  width: 40px;
+  height: 40px;
+  background-color: var(--grey-color);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+}
+#submit,
+#btnBack {
+  margin-top: 25px;
+  width: 100%;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  padding: 10px;
+  outline: none;
+  text-transform: uppercase;
+  border-radius: 20px;
+  border: none;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+#submit:hover,
+#btnBack:hover {
+  transition: 0.3s ease-in-out;
+  background-color: hsl(25, 97%, 40%);
+}
+
+#submit:active,
+#btnBack:active {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(217, 12%, 63%);
+  transition: 0.1s ease-in-out;
+}
+
+.result {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  overflow: hidden;
+}
+.result img {
+  margin-block: 20px;
+  width: 200px;
+
+}
+.attribution {
+  transform: translateY(20px);
+}
+.hover-class {
+  background-color: hsl(216, 12%, 54%);
+  color: white;
+}
+.active-class {
+  background-color: hsl(25, 97%, 40%);
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+.youSelectedParagraph {
+  color: hsl(25, 97%, 63%);
+  margin-inline: auto;
+  display: inline;
+  background-color: var(--grey-color);
+  padding: 5px 20px;
+  border-radius: 15px;
+}
